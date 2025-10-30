@@ -13,11 +13,13 @@ int main()
             cin >> a;
     cout << "Anna toinen luku.\n";
             cin >> b;
+    cout << "ensimmäisten funktioiden tulostukset:"<< endl;
 calcSum(a, b);
 calcDiv(a, b);
-cout << " ";
+cout << endl;
 int summa = retSum(a,b);
-cout << "Toinen funktio palautti: " << summa << endl;
+cout << "Toisten funtioiden palautukset:" << endl;
+cout << "Summa: " << summa << endl;
 try
     {
     float result = retDiv(a,b);
