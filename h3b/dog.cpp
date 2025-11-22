@@ -3,7 +3,7 @@
 
 Dog::Dog() {}
 
-Dog::callout()
+void Dog::callout(void)
 {
     std::cout << "Koira haukkuu." << std::endl;
 }

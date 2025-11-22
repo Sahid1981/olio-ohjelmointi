@@ -1,11 +1,12 @@
 #ifndef DOG_H
 #define DOG_H
+#include "animal.h"
 
-class Dog
+class Dog : public Animal
 {
 public:
     Dog();
-    virtual callout() override;
+    virtual void callout(void) override;
 };
 
 #endif // DOG_H

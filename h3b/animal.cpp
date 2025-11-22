@@ -3,7 +3,12 @@
 
 Animal::Animal() {}
 
-Animal::callout()
+Animal::~Animal()
 {
-    std::cout << "Eläin ääntelee." << std:endl;
+    std::cout << "tuhottu" << std::endl;
+}
+
+void Animal::callout(void)
+{
+    std::cout << "Eläin ääntelee." << std::endl;
 }
