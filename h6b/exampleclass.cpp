@@ -3,7 +3,7 @@
 ExampleClass::ExampleClass(QObject *parent) : QObject(parent)
 {
     qDebug()<<"Start";
-    QObject::connect(object1-osoite, signaali-funktio, object2-osoite, slot-funktio );
+    QObject::connect(this, &ExampleClass::readyToSay, this, &ExampleClass::sayHelloSlot);
     qDebug()<<"End";
 }
 
@@ -13,7 +13,7 @@ void ExampleClass::startToWait()
     emit readyToSay();
 }
 
-void ExampleClass::readyToSay()
+void ExampleClass::sayHelloSlot()
 {
     qDebug()<<"Terve";
 }

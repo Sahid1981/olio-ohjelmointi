@@ -12,6 +12,8 @@ public:
     void startToWait();
 signals:
     void readyToSay();
+public slots:
+    void sayHelloSlot();
 };
 
 #endif // EXAMPLECLASS_H
